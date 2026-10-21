@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="description" content="대학생의 생활 습관 관리를 위한 개인 네이티브 Android 프로젝트 CampusCare. 날짜별 기록, 공통 점수 계산, 맥락별 로컬 알림과 에뮬레이터 검증을 소개합니다.">
+  <title>CampusCare · 한태희 포트폴리오</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body class="campuscare-page">
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="wordmark" href="../index.html" aria-label="한태희 포트폴리오 홈으로">한태희<span aria-hidden="true">.</span></a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" hidden>메뉴 열기 <span aria-hidden="true">＋</span></button>
+    <nav class="site-nav" id="site-nav" aria-label="CampusCare 페이지 메뉴"><a href="#overview">소개</a><a href="#features">주요 기능</a><a href="#contributions">담당 역할</a><a href="#personalization">맞춤 설정</a><a href="#gallery">화면</a><a href="#engineering">설계</a><a href="#verification">검증</a></nav>
+  </div></header>
+
+  <main id="main" tabindex="-1">
+    <div class="container"><nav class="breadcrumb" aria-label="현재 위치"><ol><li><a href="../index.html">홈</a></li><li><a href="../index.html#projects">프로젝트</a></li><li aria-current="page">CampusCare</li></ol></nav></div>
+
+    <section class="detail-hero container" id="overview" aria-labelledby="project-title">
+      <div class="detail-hero-copy"><p class="eyebrow">대학생 생활 습관 관리 · 네이티브 Android</p><h1 id="project-title">CampusCare</h1><p class="detail-tagline">생활 습관을 설정하고,<br>하루의 실천을 기록하다.</p><p class="detail-intro">대학생이 일상 건강 습관을 관리하도록 만든 개인 프로젝트입니다. 맞춤 루틴부터 날짜별 기록·리포트와 로컬 알림까지 네이티브 Android 앱을 단독 개발했습니다.</p><dl class="detail-facts"><div><dt>프로젝트 기간</dt><dd>2026.03–2026.06</dd></div><div><dt>참여 형태</dt><dd>단독 개발</dd></div><div class="fact-role"><dt>담당 역할</dt><dd>화면 · 로컬 저장 · 캘린더 · 점수·리포트 · 알림 예약 · 테스트</dd></div></dl><div class="detail-actions"><a class="button" href="#features">주요 기능 보기 <span aria-hidden="true">↓</span></a></div></div>
+      <aside class="detail-summary" aria-labelledby="stack-title"><p class="eyebrow">기술 구성</p><h2 id="stack-title">기기 안에서 이어지는<br>설정과 기록</h2><ul class="skill-tags"><li>Kotlin</li><li>Android XML</li><li>Activity / Intent</li><li>SharedPreferences</li><li>AlarmManager</li><li>BroadcastReceiver</li><li>BootReceiver</li></ul><p class="summary-note">Android Studio 에뮬레이터에서 앱 실행과 로컬 알림을 테스트했으며, 수업 중 노트북으로 시연했습니다.</p></aside>
+    </section>
+
+    <section class="section section-white" id="features" aria-labelledby="features-title"><div class="container"><div class="section-heading"><p class="eyebrow">01 / 주요 기능</p><h2 id="features-title">설정 · 실천 · 일상 기록</h2></div><div class="contribution-grid">
+      <article><h3>맞춤 루틴과 실천 기록</h3><p>진행 표시가 있는 8문항 온보딩으로 루틴·목표를 설정하고, 완료 점수·연속 기록·성장 단계·배지로 실천을 돌아봅니다.</p></article>
+      <article><h3>날짜별 기록 · 월간 리포트</h3><p>캘린더 일정과 과거 생활 기록을 수정하고, 일별 리포트와 월간 평균 점수·기록일·기록률·주간 추세를 확인합니다.</p></article>
+      <article><h3>음주 일정에 맞춘 돌봄 루틴</h3><p>음주 이벤트와 관련 체크리스트를 연결하고, 이벤트 전후의 로컬 알림을 예약합니다.</p></article>
+    </div></div></section>
+
+    <section class="section container detail-split" id="contributions" aria-labelledby="contributions-title"><div class="section-heading"><p class="eyebrow">02 / 개인 기여</p><h2 id="contributions-title">네이티브 앱 전반을 단독 구현</h2></div><div class="detail-prose"><p>Kotlin·Android XML과 Activity/Intent로 화면과 이동을 구현했습니다. SharedPreferences 저장, 캘린더 등록·조회·수정·삭제, 점수·리포트와 알림 예약을 연결하고 에뮬레이터 실행·알림 테스트 및 수업 시연까지 진행했습니다.</p></div></section>
+
+    <section class="section section-white" id="personalization" aria-labelledby="personalization-title"><div class="container"><div class="section-heading"><p class="eyebrow">03 / 맞춤 설정 흐름</p><h2 id="personalization-title">프로필에서 일상 리포트까지</h2></div><ol class="recommendation-flow" aria-label="CampusCare 맞춤 설정과 기록 흐름"><li>온보딩 <span aria-hidden="true">→</span></li><li>루틴 · 목표 설정 <span aria-hidden="true">→</span></li><li>실천 · 생활 기록 <span aria-hidden="true">→</span></li><li>리포트 확인</li></ol><p class="verification-context">프로필은 초기 루틴을 구성하는 기준입니다. 사용자는 이후 체크리스트 표시와 알림을 각각 조정하고, 시간대 필터로 목록을 볼 수 있습니다.</p></div></section>
+
+    <section class="section container" id="gallery" aria-labelledby="gallery-title"><div class="section-heading"><p class="eyebrow">04 / 기능별 화면</p><h2 id="gallery-title">실제 화면 캡처 준비 중</h2></div><div class="screen-gallery">
+      <figure><div class="capture-placeholder"><span aria-hidden="true">01</span><p>온보딩 · 홈</p><span>실제 에뮬레이터 캡처 예정</span></div><figcaption><h3>8문항에서 오늘의 루틴까지</h3><p>온보딩 진행 표시, 홈의 시간대별 체크리스트와 완료 점수 화면을 준비 중입니다.</p></figcaption></figure>
+      <figure><div class="capture-placeholder"><span aria-hidden="true">02</span><p>캘린더 · 일별·월별 리포트</p><span>실제 에뮬레이터 캡처 예정</span></div><figcaption><h3>날짜별 기록과 월간 흐름</h3><p>과거 날짜의 식사·운동·기분 기록 수정과 일별·월별 리포트 화면을 준비 중입니다.</p></figcaption></figure>
+      <figure><div class="capture-placeholder"><span aria-hidden="true">03</span><p>루틴별 알림 설정</p><span>실제 에뮬레이터 캡처 예정</span></div><figcaption><h3>개별 알림과 여러 예약 시간</h3><p>루틴별 알림 토글, 다중 예약과 음주 이벤트 알림 설정의 실제 화면을 준비 중입니다.</p></figcaption></figure>
+    </div></section>
+
+    <section class="section section-white" id="engineering" aria-labelledby="engineering-title"><div class="container"><div class="section-heading"><p class="eyebrow">05 / 엔지니어링 개선</p><h2 id="engineering-title">날짜별 저장과 일관된 점수 계산</h2><p class="section-description">데이터는 SharedPreferences에 로컬로 저장합니다. 백엔드나 클라우드 데이터베이스는 사용하지 않습니다.</p></div><div class="case-list">
+      <article><h3>날짜 단위로 기록 분리</h3><dl><div><dt>개선 전</dt><dd><code>breakfast</code>처럼 날짜가 없는 공통 키를 사용했습니다.</dd></div><div><dt>개선 후</dt><dd><code>record_20260613_breakfast</code>처럼 날짜가 포함된 키로 각 날의 기록을 구분했습니다.</dd></div><div><dt>설계 의도</dt><dd>식사·운동·기분 등 일별 기록이 섞이지 않도록 하고, 과거 날짜 편집과 캘린더 조회를 연결했습니다.</dd></div></dl></article>
+      <article><h3>필터와 분리한 공통 점수</h3><dl><div><dt>개선 전 고려점</dt><dd>화면에 보이는 항목과 하루의 전체 활성 루틴을 점수 계산에서 구분할 필요가 있었습니다.</dd></div><div><dt>개선 후</dt><dd>완료한 루틴 수를 전체 활성 루틴 수로 나누는 공통 규칙을 적용했습니다. ScoreUtils가 날짜별로 계산해 홈과 리포트에서 함께 사용합니다.</dd></div><div><dt>계산 기준</dt><dd>일일 점수는 표시 필터와 독립적입니다. ‘건강 점수’는 루틴 완료 지표이며 임상적으로 검증된 건강 측정값이 아닙니다.</dd></div></dl></article>
+    </div><section class="detail-subsection" aria-labelledby="notifications-title"><div class="subsection-heading"><h3 id="notifications-title">음주 이벤트에 맞춘 로컬 알림</h3></div><ol class="recommendation-flow" aria-label="음주 이벤트 돌봄 루틴과 알림 흐름"><li>음주 이벤트 등록 <span aria-hidden="true">→</span></li><li>관련 돌봄 체크리스트 <span aria-hidden="true">→</span></li><li>로컬 알림: 1시간 전 · 시작 시각 · 2시간 후</li></ol><p>AlarmManager로 알림을 예약하며, 루틴별 토글·다중 시간 설정과 알림 권한을 처리합니다. BroadcastReceiver와 BootReceiver를 통한 재부팅 후 재예약 로직도 구현했습니다.</p></section></div></section>
+
+    <section class="section container detail-split" id="verification" aria-labelledby="verification-title"><div class="section-heading"><p class="eyebrow">06 / 검증과 시연</p><h2 id="verification-title">에뮬레이터 실행과 수업 시연</h2></div><div class="detail-prose"><p>Android Studio 에뮬레이터에서 앱을 실행하고 로컬 알림을 테스트했으며, 수업 중 노트북으로 시연했습니다.</p><p>별도의 실물 휴대폰 테스트, 재부팅 검증, 외부 사용자 테스트나 운영 배포는 확인되지 않았습니다. BootReceiver 구현과 재부팅 테스트 결과는 구분합니다.</p></div></section>
+
+    <div class="container detail-closing"><p>소스 저장소는 비공개입니다.</p><a class="detail-back-link" href="../index.html#projects"><span aria-hidden="true">←</span> 포트폴리오 프로젝트 목록으로</a></div>
+  </main>
+  <footer class="site-footer container"><a class="wordmark" href="../index.html" aria-label="한태희 포트폴리오 홈으로">한태희<span aria-hidden="true">.</span></a><p>한태희 · CampusCare 프로젝트</p><a class="back-top" href="#main">맨 위로 <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

@@ -17,3 +17,8 @@ node_modules/
 dist/
 build/
 .cache/
+
+# Local ReWear screenshots pending privacy review
+/assets/images/rewear/home.png
+/assets/images/rewear/closet.png
+/assets/images/rewear/lounge.png
