@@ -49,13 +49,15 @@
   navigation.addEventListener('click', (event) => {
     const link = event.target.closest('a');
     if (!link || !mobile.matches) return;
-    // Move focus to the destination before collapsing the mobile menu.
     const destination = document.querySelector(link.getAttribute('href'));
-    if (destination) {
-      destination.setAttribute('tabindex', '-1');
-      destination.focus({ preventScroll: true });
-    }
     setMenu(false);
+    // Keep native fragment/history scrolling and its sticky-header offset.
+    // After the browser follows the anchor, focus its heading, not the section.
+    const heading = destination?.querySelector('h1, h2, h3');
+    if (heading) {
+      heading.setAttribute('tabindex', '-1');
+      window.requestAnimationFrame(() => heading.focus({ preventScroll: true }));
+    }
   });
 
   document.addEventListener('keydown', (event) => {

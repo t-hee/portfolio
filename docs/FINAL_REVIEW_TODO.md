@@ -4,7 +4,7 @@ Consolidated 2026-10-22. Priority order: A → B → C → D → E → F; the D 
 
 Statuses: **DONE** = supported completion; **PENDING** = remaining work; **NEEDS_OWNER_INPUT** = confirmation, evidence or permission required. First-pass pages are complete; final media, review and deployment are not complete. No redesign is part of this checkpoint.
 
-Current save policy: the owner authorized keeping all three ReWear PNG originals local and excluding their exact paths from Git. Live references use neutral placeholders. Screenshot approval/replacement remains deferred; the image-free source may proceed through staged review and commit/push on `main` → `origin/main`. Git completion is verified separately, not assumed by this document.
+Saved checkpoint: **DONE** — `8889e3c` (`feat: complete first-pass portfolio project pages`) was committed on `main` and successfully pushed to `origin/main`. All three ReWear PNG originals remain local, unchanged and precisely ignored; live references use neutral placeholders. Screenshot approval/replacement remains deferred. The 2026-10-25 QA checkpoint authorizes a reviewed local commit only; push and deployment are not authorized.
 
 Detailed media tasks remain in [SCREENSHOT_TODO.md](SCREENSHOT_TODO.md); this file is the single final-review backlog. Unresolved facts remain explicit in [PROJECT_FACTS.md](../PROJECT_FACTS.md).
 
@@ -89,7 +89,7 @@ Only actual project images/figures may replace placeholders. Never fabricate res
 
 - [x] **DONE** — Owner-authorized safe-save exclusion: precisely ignore `assets/images/rewear/home.png`, `closet.png` and `lounge.png`; preserve originals locally and replace published references with neutral HTML/CSS placeholders.
 
-- [ ] **PENDING** — For the image-free save, rescan the exact commit candidates for secrets, environment files, credentials, private datasets, personal records, local databases and generated caches; stage only reviewed files and inspect staged names/diff. Commit on the existing branch and push only with an authenticated configured upstream; never force-push or rewrite history.
+- [x] **DONE** — Image-free checkpoint `8889e3c`: scanned the exact candidates, explicitly staged 14 reviewed text files, inspected staged names/diff and whitespace, committed on `main` and confirmed the push to `origin/main`. All six detail pages and required homepage assets were included; the three ReWear PNGs were excluded. Repeat privacy/staged-file review before any future authorized save; never force-push or rewrite history.
 
 - [ ] **NEEDS_OWNER_INPUT** — decide whether to publish the CampusCare source repository. Keep it private/unlinked until explicitly authorized and reviewed for secrets.
 
@@ -99,13 +99,25 @@ Only actual project images/figures may replace placeholders. Never fabricate res
 
 - [ ] **NEEDS_OWNER_INPUT** — Check ReWear and CareMate team-owned repository attribution, link destinations and suitability for public linking. Do not imply individual ownership of team code.
 
+- [x] **DONE** — Integration audit: removed the four live ReWear/CareMate source links pending public-link approval; preserved collaborator ownership wording and URLs in `docs/REWEAR_BRIEF.md` / `PROJECT_FACTS.md`. Private project repositories and Your Breath remain unlinked. Restoring links requires owner confirmation of permissions/privacy; repository visibility was not changed.
+
 - [ ] **PENDING** — Verify all external links and remove unconfirmed or broken destinations.
 
 ## E. Portfolio-wide QA
 
+- [x] **DONE** — 2026-10-25, owner-reported manual verification: desktop/tablet visual layout and active navigation state at **1440px / 768px**. Preserve the two-column project cards at 768px, aligned card footers, current mobile navigation and WallGuard flow connectors. This is limited visual/layout and active-state verification, not full accessibility or real-device QA.
+
+- [ ] **PENDING** — Complete real-device Safari testing, manual keyboard/VoiceOver checks and 200% zoom review. Automated/simulated checks do not close these manual tasks. Privacy, screenshots, source permissions, implementation/testing evidence and deployment remain pending as listed below and in sections A–D/F.
+
 - [x] **DONE** — Static review on 2026-10-22 confirmed all six homepage-to-detail links, seven HTML document structures, local asset paths and anchor targets. This does not complete visual/browser/accessibility or public-link QA.
 
-- [ ] **PENDING** — Review documentation freshness, including README starter wording and specification planning status, without silently changing verified project facts.
+- [x] **DONE** — Integration audit repeated local link/anchor, balanced HTML, heading-level, menu-control and accessible-label checks across seven documents. Shared JavaScript syntax and mocked-DOM checks passed for menu state, destination focus, Escape and responsive focus restoration. Existing dynamic header-offset, visible-focus and reduced-motion rules remain. These are static/simulated checks; real-browser keyboard, screen-reader, viewport/overflow and anchor-clearance QA remain **PENDING**.
+
+- [x] **DONE** — Replaced README starter instructions with the actual six-page structure, vanilla stack, local preview, deployment plan and privacy/attribution rules.
+
+- [ ] **PENDING** — Reconcile the original specification's planning-era implementation status/routes during a future authorized specification update. README now explicitly identifies that text as historical; the specification is unchanged in this audit.
+
+- [x] **DONE** — Integration content audit: aligned concise homepage summaries with confirmed ReWear scope, configurable MeetFit recommendations, WallGuard physical integration, native/date-specific CampusCare work and Your Breath research leadership/progression. CareMate's frontend leadership and senior-focused UX scope, awards, credentials, education and TOEIC Speaking 140 (IH) were retained. This comparison is against portfolio facts/pages, not a fresh final-report or source-code verification.
 
 - [ ] **PENDING** — Recheck `PROJECT_FACTS.md` and [SCREENSHOT_TODO.md](SCREENSHOT_TODO.md) when pending research facts and figure permissions are resolved. Do not infer subject-independent CNN validation or sole ML/CNN authorship.
 

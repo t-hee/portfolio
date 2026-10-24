@@ -90,6 +90,10 @@ h2 { margin-top: 12px; font-size: clamp(26px, 2.8vw, 33px); font-weight: 700; le
 .placeholder-meetfit { background: #eef0f5; }
 .placeholder-caremate { background: #eff2f2; }
 .project-body { padding: 28px; }
+.featured-grid > .project-card:not(.project-wide) { display: flex; flex-direction: column; }
+.featured-grid > .project-card:not(.project-wide) > .project-body { display: flex; flex-direction: column; flex: 1; }
+.featured-grid > .project-card:not(.project-wide) .project-detail-link { margin-top: auto; }
+.featured-grid > .project-card:not(.project-wide) .project-body > :nth-last-child(2) { margin-bottom: 22px; }
 .project-meta { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; font-size: 13px; font-weight: 500; color: var(--muted); font-variant-numeric: tabular-nums; }
 .project-meta > span:first-child { color: var(--navy); font-weight: 600; }
 .project-body h3 { margin-top: 12px; font-size: 27px; letter-spacing: -.035em; }
@@ -179,8 +183,9 @@ h2 { margin-top: 12px; font-size: clamp(26px, 2.8vw, 33px); font-weight: 700; le
   :root { --header-height: 174px; }
   .container { width: calc(100% - 40px); }
   .header-inner { min-height: 70px; position: relative; flex-wrap: wrap; gap: 0 20px; }
+  .menu-toggle { min-width: 44px; padding: 6px 8px; border-color: transparent; font-size: 13px; font-weight: 500; color: var(--muted); }
   .site-nav { width: 100%; flex-wrap: wrap; gap: 4px 21px; padding-bottom: 12px; }
-  .site-nav a { font-size: 13px; }
+  .site-nav a { min-width: 44px; max-width: 100%; font-size: 13px; }
   .hero { padding-top: 55px; grid-template-columns: 1fr; gap: 0; }
   h1 { font-size: clamp(30px, 5.6vw, 40px); }
   .hero-intro { max-width: 500px; font-size: 14px; }
@@ -289,8 +294,6 @@ h2 { margin-top: 12px; font-size: clamp(26px, 2.8vw, 33px); font-weight: 700; le
 :is(.rewear-cases, .case-list) dd { flex: 1 1 220px; min-width: 0; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.9; }
 .screen-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; }
 .screen-gallery figure { margin: 0; min-width: 0; }
-.screenshot-link { display: block; max-width: 250px; margin-inline: auto; border-radius: 26px; }
-.screenshot-link:hover { outline: 2px solid var(--rewear-green); outline-offset: 5px; }
 .screen-gallery figcaption { margin-top: 30px; }
 .screen-gallery figcaption > span { font-size: 12px; font-weight: 600; }
 .screen-gallery h3 { margin-top: 7px; font-size: 18px; letter-spacing: -.035em; }
@@ -340,9 +343,6 @@ h2 { margin-top: 12px; font-size: clamp(26px, 2.8vw, 33px); font-weight: 700; le
 .verification-grid dt { color: var(--muted); font-size: 13px; }
 .verification-grid dd { margin: 15px 0 0; color: var(--navy); font-size: 14px; }
 .verification-grid strong { font-size: 25px; font-weight: 650; }
-.pending-note { padding: 26px; border: 1px dashed #b7c5d6; border-radius: 8px; background: var(--bg); }
-.pending-note h3 { color: var(--navy); font-size: 16px; }
-.pending-note p { max-width: 740px; margin-top: 12px; font-size: 14px; line-height: 1.9; color: var(--muted); }
 :is(.meetfit-page, .caremate-page, .wallguard-page, .campuscare-page, .research-page) .architecture-services .architecture-node { border-top-color: #b5c4d8; }
 :is(.meetfit-page, .caremate-page, .wallguard-page, .campuscare-page, .research-page) .section { padding-block: 64px; }
 :is(.meetfit-page, .caremate-page, .wallguard-page, .campuscare-page, .research-page) .section-heading { margin-bottom: 26px; }
@@ -388,7 +388,6 @@ h2 { margin-top: 12px; font-size: clamp(26px, 2.8vw, 33px); font-weight: 700; le
   .verification-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .screen-gallery { grid-template-columns: 1fr; gap: 45px; }
   .screen-gallery figure { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 28px; }
-  .screenshot-link { max-width: 230px; width: 100%; }
   .screenshot-placeholder { max-width: 230px; }
   .screen-gallery figcaption { margin-top: 0; }
   .architecture-panel { padding: 20px; }
@@ -401,6 +400,10 @@ h2 { margin-top: 12px; font-size: clamp(26px, 2.8vw, 33px); font-weight: 700; le
   .detail-closing { align-items: start; flex-direction: column; padding-block: 45px; }
 }
 @media (max-width: 480px) {
+  :is(.rewear-contributions, .contribution-grid) { gap: 12px; }
+  :is(.rewear-contributions, .contribution-grid) article { padding: 18px; }
+  :is(.rewear-contributions, .contribution-grid) h3 { margin-top: 10px; }
+  :is(.rewear-contributions, .contribution-grid) p { margin-top: 8px; }
   .verification-grid { grid-template-columns: 1fr; }
   .phone-trio { gap: 7px; padding-inline: 12px; }
   .phone-trio .phone-frame { padding: 2px; border-radius: 12px; }
@@ -415,6 +418,14 @@ h2 { margin-top: 12px; font-size: clamp(26px, 2.8vw, 33px); font-weight: 700; le
 .risk-table th, .risk-table td { padding: 12px; text-align: left; border-bottom: 1px solid var(--border); }
 .risk-table th { color: var(--navy-dark); font-weight: 600; }
 .campuscare-page .detail-hero h1 { font-size: clamp(40px, 5.5vw, 64px); }
+/* Keep WallGuard's sequential data path in one reading direction. */
+.wallguard-page #architecture .architecture-services { grid-template-columns: 1fr; gap: 28px; }
+.wallguard-page #architecture .architecture-services > li { position: relative; }
+.wallguard-page #architecture .architecture-services > li + li::before { content: ""; position: absolute; width: 8px; height: 8px; border-right: 2px solid var(--navy); border-bottom: 2px solid var(--navy); top: -21px; left: calc(50% - 4px); transform: rotate(45deg); }
+@media (min-width: 1001px) {
+  .wallguard-page #architecture .architecture-services { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .wallguard-page #architecture .architecture-services > li + li::before { top: calc(50% - 4px); left: -21px; transform: rotate(-45deg); }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }

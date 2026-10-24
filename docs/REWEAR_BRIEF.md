@@ -5,6 +5,7 @@
 - Period: 2025-09 to 2025-12 (existing portfolio facts)
 - Team project; mobile clothing-care and sustainable fashion platform.
 - Repository (team member-owned): https://github.com/juuu-sung/Re-wear-project
+- **Public-link status: NEEDS_OWNER_INPUT.** Live portfolio source links are temporarily omitted pending permission/public-link suitability review; preserve this URL for later owner approval. Do not change repository visibility.
 - Team repo is for reference/linking, **not** the portfolio repo. Do not modify it.
 
 ## Verified user contributions
@@ -42,7 +43,7 @@ Two awards belong to the same ReWear project.
 
 ## Page plan
 1. Breadcrumb/back to homepage.
-2. Hero with project title, concise Korean problem/solution summary, role, period, awards, repository link, and phone-frame placeholders until actual captures are approved.
+2. Hero with project title, concise Korean problem/solution summary, role, period, awards, and phone-frame placeholders until actual captures are approved. Repository link remains omitted pending public-link approval.
 3. Overview and user problem.
 4. My contributions: show the verified responsibility areas above; distinguish My Forest structure/UI design from game logic and personal contributions from team-wide implementation.
 5. Three app screens with accurate descriptive captions.
@@ -53,5 +54,5 @@ Two awards belong to the same ReWear project.
 
 ## Publication checklist
 - Screenshots show a teammate/test account name and third-party garment images. Review public-display permission, privacy and image rights before making the website live.
-- Do not rehost or copy code/assets from the team repo unless permission/license is confirmed. Linking to the repo is fine.
+- Do not rehost or copy code/assets from the team repo unless permission/license is confirmed. Restore the portfolio source link only after public-link permission/suitability is confirmed; retain team-member ownership attribution.
 - No made-up authorship, metrics, completed features, or deployment claims.

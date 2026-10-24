@@ -10,6 +10,7 @@ _Source priority: user-provided Nexon internship application screenshots receive
 - No public GitHub/email/resume URL confirmed yet. **Do not fabricate them**.
 
 ### Portfolio checkpoint — 2026-10-22
+- **DONE:** first-pass source checkpoint `8889e3c` was committed on `main` and successfully pushed to `origin/main`; this is a saved source checkpoint, not GitHub Pages deployment.
 - **DONE:** six first-pass detail pages exist: `projects/rewear.html`, `projects/meetfit.html`, `projects/caremate.html`, `projects/wallguard.html`, `projects/campuscare.html`, `projects/yourbreath.html`. This means initial content implementation, not final evidence review or deployment.
 - **PENDING:** final factual/source cross-check, genuine media insertion, browser/mobile/accessibility QA and GitHub Pages public URL verification. Priority backlog: `docs/FINAL_REVIEW_TODO.md`; detailed capture tasks: `docs/SCREENSHOT_TODO.md`.
 - **NEEDS_OWNER_INPUT:** final public contacts; personal/team authorship gaps including PSBI; source/figure permissions and private-repository publication decisions. Do not invent missing evidence or complete unverified tasks.
@@ -80,7 +81,7 @@ Important: ReWear earned **two distinct awards** for the **same project**. Do no
 
 ### CareMate
 - AI-assisted daily care app for seniors and guardians; **3-person team**, academic project period **2026.03–2026.06**.
-- Team-owned repository: https://github.com/juuu-sung/CareMate. Link and credit as a team repository; do not clone or modify it for portfolio work.
+- Team-owned repository: https://github.com/juuu-sung/CareMate. Public-link suitability/permission remains **NEEDS_OWNER_INPUT**; the portfolio source links are temporarily omitted. If approved later, credit as a team repository. Do not clone, modify it or change visibility for portfolio work.
 - User-confirmed team stack: React Native, Expo, TypeScript, FastAPI and PostgreSQL. Team architecture does not imply sole authorship.
 - Verified personal contributions:
   - Led mobile frontend development.
